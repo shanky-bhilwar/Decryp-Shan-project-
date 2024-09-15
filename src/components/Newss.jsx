@@ -41,12 +41,7 @@ const Newss = () => {
   return (
 
         
-// {/* making this form so i can collect the search bar text and then setsearch the value 
-// of those text in usestate after that onsubmit ill run the searching function where the 
-// funcition will run the main function(api) that is fetching the data from news api 
-// link but with the argument (search) this is a usestate variable which has the value of 
-// text field we gonna fill in search bar 
-//  */}
+
     
 <div>
 <form onSubmit={searching}>
