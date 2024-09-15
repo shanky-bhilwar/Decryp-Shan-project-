@@ -1,0 +1,35 @@
+/* Styling for the search container to align items */
+.search-container {
+    display: flex;
+    justify-content: center; /* Center the search bar and button horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between search input and button */
+    margin-bottom: 20px; /* Space below the search bar */
+    margin-top:15px;
+}
+
+/* Styling for the search input */
+.search-input {
+    width: 250px; /* Adjust width as needed */
+    padding: 10px;
+    border: 2px solid rgb(0, 21, 41); /* Border color */
+    border-radius: 4px;
+    font-size: 16px; /* Font size */
+}
+
+/* Styling for the search button */
+.search-button {
+    padding: 10px 20px;
+    background-color: rgb(0, 21, 41); /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-button:hover {
+    background-color: rgb(10, 30, 60); /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}

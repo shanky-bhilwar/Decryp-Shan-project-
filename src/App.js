@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
-
-import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components';
+//Just replace the 'antd/dist/antd.css' with 'antd/dist/reset.css' -->
+import { Exchanges, Homepage, Newss, Cryptocurrencies, CryptoDetails, Navbar } from './components';
 import './App.css';
 
 const App = () => (
@@ -23,11 +23,11 @@ const App = () => (
             <Route exact path="/cryptocurrencies">
               <Cryptocurrencies />
             </Route>
-            <Route exact path="/crypto/:coinId">
+            <Route exact path="/crypto/:coinId">               {/* seperate page for specific cryptocurrencies initialized here  */}
               <CryptoDetails />
             </Route>
-            <Route exact path="/news">
-              <News />
+            <Route exact path="/newss">
+              <Newss />
             </Route>
           </Switch>
         </div>
@@ -45,7 +45,7 @@ const App = () => (
           <Link to="/">Home</Link>
           {/* <Link to="/exchanges">Exchanges</Link> */}
           <Link to="/cryptocurrencies">cryptocurrencies</Link>
-          <Link to="/news">News</Link>
+          <Link to="/newss">News</Link>
         </Space>
       </div>
     </div>
